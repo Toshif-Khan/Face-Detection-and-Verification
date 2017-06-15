@@ -34,7 +34,7 @@ namespace FaceDetectAndIdentify
             webcam.InitializeWebCam(ref captureImage);
         }
 
-        private readonly IFaceServiceClient faceServiceClient = new FaceServiceClient("404062c4115f475cbf6bbd574ed35001");
+        private readonly IFaceServiceClient faceServiceClient = new FaceServiceClient("Paste your Face API subscription key here");
 
         string personGroupId = "myncrgroup";
 
@@ -348,7 +348,7 @@ namespace FaceDetectAndIdentify
 
         private async void btnIdentify_Click(object sender, RoutedEventArgs e)
         {
-            var faceServiceClient = new FaceServiceClient("404062c4115f475cbf6bbd574ed35001");
+            var faceServiceClient = new FaceServiceClient("Paste your Face API subscription key here");
             try
             {
                 Title = String.Format("Request: Training group \"{0}\"", personGroupId);
